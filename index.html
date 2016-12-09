@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeSharks Portal</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body ng-app="CodeShark">
+	<div class="container" ng-controller="AuthCtrl">
+		<div class="col l6">
+			<form class="form-signin">
+				<h1>Welcome!</h1>
+				<h4>Login</h4>
+		       <div class="row">
+			        <div class="input-field col s6">
+			          <input ng-model="email" id="email" type="text" class="validate">
+			          <label for="last_name">Hacker Name</label>
+			        </div>
+		      	</div>
+		      	<div class="row">
+			        <div class="input-field col s6">
+			          <input ng-model="password" id="password" type="password" class="validate">
+			          <label for="last_name">Encryption Key</label>
+			        </div>
+		      	</div>
+		        <!---->
+
+		        <button class="btn btn-large btn-primary" ng-click="login()">Get Hacking</button>
+		        <button class="btn btn-large btn-primary" ng-click="signup()">Sign Up</button>
+
+		        <p class="success" ng-if="message"><strong>{{ message }}</strong></p> 
+		  		<p class="error" ng-if="error"><strong>{{ error }}</strong></p>
+
+		      </form>
+		</div> 
+    </div>
+
+    	<!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    	<!--AngularJS-->
+    <script src="js/angular.min.js"></script>
+
+    	<!-- Materialize minified JavaScript -->
+	<script src="js/materialize.min.js"></script>
+
+		<!--Firebase-->
+	<script src="js/firebase.js"></script>
+
+		<!--AngularFire-->
+	<script src="js/angularfire.min.js"></script>
+
+		<!--Controller-->
+	<script src="js/controller.js"></script>
+
+	<script type="text/javascript" src="js/matrix.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+@font-face{
+	font-family: hack;
+    src: url(../font/monof55.ttf);
+}
+
+@font-face{
+	font-family: hackk;
+    src: url(../font/monof56.ttf);
+}
+
+body {
+  background: #000;
+  margin: 0;
+  padding: 0;
+}
+
+#head p{
+	position: absolute;
+	color: white;
+	font-size: 100px;
+	margin-left: 100px;
+	font-family: hack;
+	margin-top: 15%;
+	opacity: .4;
+}
+small{
+	font-size: 25px;
+}
+span{
+	font-family: hackk;
+	font-size: 50px;
+	text-align: left;
+	opacity: 0.6;
+	text-transform: uppercase;
+	margin-left: 15%;
+}
+canvas{
+	opacity: .2;
+	position: absolute;
+	top: 0;
+	min-height: 100vh;
+	width: 100%;
+}
+
+.error{
+  font-size: 20px;
+  font-weight: 900;
+  color: #fff;
+}
+
+.form-signin{
+	position: relative;
+	z-index: 9999;
+}
+
+.form-signin h1,.form-signin h4{
+	color: #fff;
+}
+
+.btn-primary{
+     background-color: #296403;
+}
+
+.btn-primary:hover,.btn-primary:active, .btn-primary:focus {
+     background-color: darkgrey;
+}
+
+.utechPIC img{
+  width: 100%;
+  border-radius: 2%;
+}
+
+
+/* label color */
+   .input-field label {
+     color: #296403;
+   }
+   /* label focus color */
+   .input-field input[type=text]:focus + label {
+     color: #296403;
+   }
+   /* label underline focus color */
+   .input-field input[type=text]:focus {
+     border-bottom: 1px solid #296403;
+     box-shadow: 0 1px 0 0 #296403;
+   }
+   /* valid color */
+   .input-field input[type=text].valid {
+     border-bottom: 1px solid #296403;
+     box-shadow: 0 1px 0 0 #296403;
+   }
+   /* invalid color */
+   .input-field input[type=text].invalid {
+     border-bottom: 1px solid #296403;
+     box-shadow: 0 1px 0 0 #296403;
+   }
+   /* icon prefix focus color */
+   .input-field .prefix.active {
+     color: #296403;
+   }
+
+   input{
+   	color: #fff;
+   }
