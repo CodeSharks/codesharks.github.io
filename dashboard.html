@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CodeSharks Portal</title>
+	<link rel="stylesheet" type="text/css" href="css/materialize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<style type="text/css">
+		canvas{
+			opacity: 0.1;
+		}
+	</style>
+</head>
+<body ng-app="CodeShark">
+	<div class="container row" ng-controller="Dash">
+		<div class="col l6">
+			<form class="form-signin">
+				<h4>Find That UTech Student</h4>
+		       <div class="row">
+			        <div class="input-field col s6">
+			          <input ng-model="utechID" id="utechID" type="text" class="validate">
+			          <label for="utechID">UTech ID</label>
+			        </div>
+		      	</div>
+		      	<button class="btn btn-large btn-primary" ng-click="find(utechID)">FIND THAT NIGGA</button>
+		      	<a class="btn btn-large btn-primary" ng-href="{{ idNum }}" download>DOWNLOAD IMAGE</a>
+		      </form>
+		</div> 
+		<div class="col l6">
+			<div class="utechPIC">
+				<img ng-src="{{ idNum }}">
+			</div>
+		</div>
+    </div>
+
+    	<!-- jQuery -->
+    <script src="js/jquery.min.js"></script>
+
+    	<!--AngularJS-->
+    <script src="js/angular.min.js"></script>
+
+    	<!-- Materialize minified JavaScript -->
+	<script src="js/materialize.min.js"></script>
+
+		<!--Firebase-->
+	<script src="js/firebase.js"></script>
+
+		<!--AngularFire-->
+	<script src="js/angularfire.min.js"></script>
+
+		<!--Controller-->
+	<script src="js/controller.js"></script>
+	<script type="text/javascript" src="js/matrix.js"></script>
+</body>
+</html>
